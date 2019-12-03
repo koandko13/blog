@@ -1,0 +1,69 @@
+<div class="row">
+<?php if($error !=''):?>
+        <div class="alert alert-danger" role="alert"><?=$error ?></div>
+    <?php endif;?>
+    <form method="post" action="addUser.php" class="col-12" enctype="multipart/form-data">
+        
+        <div class="form-group pl-3">
+            <label for="username">Username</label>
+            <input class="form-control" id="username" type="text" name="username" required value="<?=$username?>">
+        </div>
+        <div class="form-group pl-3">
+            <label for="email">Email</label>
+            <input class="form-control" id="email" type="email" name="email" required value="<?=$email?>">
+        </div>
+        <div class="form-group pl-3">
+            <label for="password">Password</label>
+            <input class="form-control" id="password" type="password" name="password" required value="">
+        </div>
+        <div class="form-group pl-3">
+            <label for="password_again">Retaper le Password</label>
+            <input class="form-control" id="password_again" type="password" name="password_again" required value="">
+        </div>
+        <div class="form-group pl-3">
+            <label for="firstname">Firstname</label>
+            <input class="form-control" id="firstname" type="text" name="firstname" required value="<?=$firstname?>">
+        </div>
+        <div class="form-group pl-3">
+            <label for="lastname">Lastname</label>
+            <input class="form-control" id="lastname" type="text" name="lastname" required value="<?=$lastname?>">
+        </div>
+        <div class="form-group pl-3">
+            <label for="bio">Bio</label>
+            <textarea class="form-control" id="bio" rows="3" name="bio" value="<?=$bio?>"></textarea>
+        </div>
+        <div class="form-group pl-3">
+            <label for="avatar">Avatar</label>
+            <input class="form-control" id="avatar" type="file" name="avatar" value="<?=$avatar?>">
+        </div>
+        <div class="form-group pl-3">
+            <select name="role" id="">
+                <option value ="ROLE_ADMIN">Administrateur</option>
+                <option value ="ROLE_AUTHOR">Auteur</option>
+        </select>
+        </div>
+        <div class="card-body">
+            <button type="submit" class="d-block btn btn-primary">Enregistrer</button>
+        </div>
+    </form>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

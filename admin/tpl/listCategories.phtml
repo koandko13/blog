@@ -1,0 +1,21 @@
+<div class="row">
+    <table class="table col-4">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">Ordre</th>
+                <th scope="col">Catégories</th>
+                <th scope="col">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php foreach($category as $categorie): ?>
+            <tr>
+                <td scope="col"><?=$categorie['ordre'];?></td>
+                <td scope="col"><?=$categorie['name_categorie'];?></td>
+                <td scope="col"><a id="edit" href="#"><i class="fas fa-edit"></i></a><a id="suppr" href="#"><i class="fas fa-trash-alt"></i></a>
+            </tr>
+            <?php endforeach ?>
+        </tbody>
+    </table>
+</div>
+

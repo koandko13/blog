@@ -1,0 +1,34 @@
+<div class="row">
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">Catégorie</th>
+                <th scope="col">Titre</th>
+                <th scope="col">Date de création</th>
+                <!-- <th scope="col">Date de publication</th> -->
+                <th scope="col">Contenu</th>
+                <!-- <th class="col-md-1"scope="col">Date de publication</th>
+                <th class="col-md-1"scope="col">Auteur</th>-->
+                <th scope="col">Visuel</th>
+                <th scope="col">Actions</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+        <?php foreach($articles as $article): ?>
+            <tr>
+                
+                <td><?=$article['name_categorie'];?></td>
+                <td><?=$article['title_art'];?></td>
+                <td><?=$article['create_date'];?></td>
+                <!-- <td><?=$article['published_date'];?></td> -->
+                <td><?=$article['content_art'];?></td>
+                <!-- <td></td>-->
+                <td scope="col"><a href="#"><img src="../uploads/<?=$article["image_art"];?>"></a></td>
+                <td scope="col"><a id="edit"href="#"><i class="fas fa-edit"></i></a><a id="suppr" href="#"><i class="fas fa-trash-alt"></i></a>
+                </td>
+            </tr>
+            <?php endforeach ?>
+        </tbody>
+    </table>
+</div>

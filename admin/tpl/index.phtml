@@ -1,0 +1,159 @@
+<div class="container">
+    <div class="row mb-3">
+        <div class="col-12 sm col-md-4">
+            <div class="card">
+                <div class="card-header text-white bg-dark">
+                    <p class="card-text-white ">Visualisation rapide</p>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Pour voir tout de suite votre site</p>
+                    <a href="../index.php" class="btn btn-primary">Afficher votre site</a>
+                </div>
+            </div>
+            <div class="card mt-3">
+                <div class="card-header text-white bg-dark">
+                    <p class="card-text-white ">Action rapides</p>
+                </div>
+                <div class="card-body">
+                    <a href="addArticles.php" class="d-block card-link text-primary"><i class="far fa-newspaper<?=($activeMenu=='article')?'active':' '?> ">Ajouter une article</i></a>
+                    <a href="#" class="d-block card-link text-primary"><i class="far fa-file">Ajouter une page</i></a>
+                    <a href="addUser.php" class="d-block card-link text-primary"><i class="far fa-user <?=($activeMenu=='addUser')?'active':' '?>">Ajouter un utilisateur</i></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 sm col-md-8">
+            <div class="card">
+                <div class="card-header text-white bg-dark">
+                <p class="card-text-white ">Articles rapides</p>
+                </div>
+            <form>
+                <div class="form-group pl-3">
+                    <label for="formGroupExampleImput">Titre</label>
+                    <input class="form-control" id="formGroupExampleImput" type="text" placeholder="Titre">
+                </div>
+                <div class="form-group pl-3">
+                    <label for="exampleFormControlTextarea1">Texte de l'article</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <div class="form-check form-check-inline pl-3">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                    <label class="form-check-label" for="inlineRadio1">Publier</label>
+                </div>
+                <div class="form-check form-check-inline pl-3">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">Brouillon</label>
+                </div>
+                <div class="card-body">
+                <button type="submit" class="d-block btn btn-primary">Enregistrer</button>
+                </div>
+            </form>
+            </div> 
+        </div>   
+    </div>
+    <div class="row">
+        <div class="col-12 sm col-md-7">
+            <ul class="list-group">
+                <div class="card">
+                    <div class="card-header text-white bg-dark">
+                    <h5>Liste des derniers articles</h5>
+                    </div>
+                </div>    
+                <li class="list-group-item">
+                    <h6>Article 1</h6>
+                    <blockquote class="blockquote mb-0 card-body">
+                    <p>début du text de l'article(...)</p>
+                    <footer class="blockquote-footer">
+                        <small class="text-muted">
+                        Auteur :<cite title="Source Title">Fred</cite>
+                        </small>
+                    </footer>
+                    </blockquote>
+                </li>
+                <li class="list-group-item">
+                    <h6>Article 2</h6>
+                    <blockquote class="blockquote mb-0 card-body">
+                    <p>début du text de l'article(...)</p>
+                    <footer class="blockquote-footer">
+                        <small class="text-muted">
+                        Auteur :<cite title="Source Title">Fred</cite>
+                        </small>
+                    </footer>
+                    </blockquote>
+                </li>
+                <li class="list-group-item">
+                    <h6>Article 3</h6>
+                    <blockquote class="blockquote mb-0 card-body">
+                    <p>début du text de l'article(...)</p>
+                    <footer class="blockquote-footer">
+                        <small class="text-muted">
+                        Auteur :<cite title="Source Title">Fred</cite>
+                        </small>
+                    </footer>
+                    </blockquote>
+                </li>
+                <li class="list-group-item">
+                    <h6>Article 4</h6>
+                    <blockquote class="blockquote mb-0 card-body">
+                    <p>début du text de l'article(...)</p>
+                    <footer class="blockquote-footer">
+                        <small class="text-muted">
+                        Auteur :<cite title="Source Title">Fred</cite>
+                        </small>
+                    </footer>
+                    </blockquote>
+                </li>
+            </ul>
+            <a href="#">Voir tous les articles</a>
+        </div>
+        <div class="col-12 sm col-md-5">
+            <ul class="list-group">
+                <div class="card">
+                    <div class="card-header text-white bg-dark">
+                        <h5>Liste des derniers commentaires</h5>
+                    </div>
+                </div>
+                <li class="list-group-item  py-0">
+                    <blockquote class="blockquote mb-0 card-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur (...)</p>
+                        <footer class="blockquote-footer">
+                            <small class="text-muted">
+                            De Jean Bob
+                            </small>
+                        </footer>
+                    </blockquote>
+                </li>  
+                <li class="list-group-item  py-0">
+                    <blockquote class="blockquote mb-0 card-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur (...)</p>
+                        <footer class="blockquote-footer">
+                            <small class="text-muted">
+                            De Jean Karime
+                            </small>
+                        </footer>
+                    </blockquote>
+                </li>
+                <li class="list-group-item  py-0">
+                    <blockquote class="blockquote mb-0 card-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur (...)</p>
+                        <footer class="blockquote-footer">
+                            <small class="text-muted">
+                            De Jean Fred
+                            </small>
+                        </footer>
+                    </blockquote>
+                </li>
+                <li class="list-group-item  py-0">
+                    <blockquote class="blockquote mb-0 card-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur (...)</p>
+                        <footer class="blockquote-footer">
+                            <small class="text-muted">
+                            De Jeanne Sabine
+                            </small>
+                        </footer>
+                    </blockquote>
+                </li>
+            </ul>
+            <a href="#">Voir tous les commentaires</a>
+        </div>
+    </div> 
+</div>

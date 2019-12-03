@@ -1,0 +1,17 @@
+<div class="row">
+
+    <form method="post" action="addCategories.php" class="col-12" enctype="multipart/form-data">
+        <div class="form-group pl-3">
+            <label for="ordre">Ordre</label>
+            <input class="form-control" id="ordre" type="number" name="ordre" required value="<?=$ordre ?>">
+        </div>
+        <div class="form-group pl-3">
+            <label for="name_categorie">Catégorie</label>
+            <input class="form-control" id="name_categorie" type="text" name="name_categorie" required value="<?=$categorie ?>">
+        </div>
+        
+        <div class="card-body">
+            <button type="submit" class="d-block btn btn-primary">Enregistrer</button>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,37 @@
+<div class="row">
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Username</th>
+                <th scope="col">Email</th>
+                <th scope="col">Firstname</th>
+                <th scope="col">Lastname</th>
+                <th scope="col">Bio</th>
+                <th scope="col">Date création</th>
+                <th scope="col">Avatar</th>
+                <th scope="col">Role</th>
+                <th scope="col">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php foreach($users as $user) : ?>
+            <tr>
+                <th scope="col"><?=$user['id'];?></th>
+                <td scope="col"><?=$user['username'];?></td>
+                <td scope="col"><?=$user['email'];?></td>
+                <td scope="col"><?=$user['firstname'];?></td>
+                <td scope="col"><?=$user['lastname'];?></td>
+                <td scope="col"><?=$user['bio'];?></td>
+                <td scope="col"><?=$user['create_date'];?></td>
+                <td scope="col"><?=$user['avatar'];?></td>
+                <td scope="col"><?=$user['role'];?></td>
+                <td scope="col"><a id="edit" href="#"><i class="fas fa-edit"></i></a><a id="suppr" href="#"><i class="fas fa-trash-alt"></i></a>
+            </tr>
+            <?php endforeach ?>
+        </tbody>
+    </table>
+
+</div>
+
+
